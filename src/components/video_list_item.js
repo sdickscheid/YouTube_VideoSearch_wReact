@@ -2,7 +2,7 @@ import React from 'react';
 
 const VideoListItem = ({video, onVideoSelect}) => {
 
-  // Pull the image URL off of the {video} object above that is being passed in to the VideoListItem component as props from the VideoList component
+  // Pull the image URL off of the {video} object which is being passed in to the VideoListItem component as props from the VideoList component
   const imageUrl = video.snippet.thumbnails.default.url;
 
   return (

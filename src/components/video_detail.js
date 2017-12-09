@@ -5,8 +5,10 @@ const VideoDetail = ({video}) => {
     return <div>loading...</div>;
   }
 
-// craft your own embed url
 const videoId = video.id.videoId;
+// craft your own embed url
+  // const url = 'http://www.youtube.com/embed/' + videoId;
+  // v__ with ES6 syntactical sugar; use template strings and add a JS variable to change the video ID
 const url = `http://www.youtube.com/embed/${videoId}`;
 
   return (
